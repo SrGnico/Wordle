@@ -1,0 +1,97 @@
+body{
+    background: linear-gradient( #4b6cb7 0%, #182848 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+    overflow: hidden;
+}
+
+*{
+    font-family: 'IBM Plex Mono', monospace;
+    box-sizing: border-box;
+}
+
+.palabraMisteriosa{
+    display: flex;
+
+}
+
+.inputs, button,.divs-respuesta,.vida,.palabra{
+    background-color: rgb(49, 49, 49);
+    box-shadow: inset 10px 10px 20px black, inset  -5px -5px 5px rgba(179, 179, 179, 0.585);
+    color: wheat;
+    text-align: center;
+    justify-items: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.palabra{
+    margin: 0.3rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    font-size: 5rem;
+    letter-spacing: 2rem;
+}
+
+
+.form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputs, button,.divs-respuesta,.vidas{
+    margin: 5px;
+    appearance: none;
+    height: 90px;
+    width: 90px;
+    font-size: 4rem;
+}
+
+button,.vidas{
+    box-shadow: none;
+    background-color: #182848;
+    border: 2px solid;
+}
+
+button:hover{
+    background-color: #1a3b60;
+}
+
+button:active{
+    transition: all ease 0.2s;
+    transform: translateY(3px);
+}
+
+.div-cont-resp-creadas{
+    display: flex;
+}
+
+
+
+[data-feedback='bien']{
+    background-color: rgb(20, 117, 28);
+}
+
+[data-feedback='mal']{
+    background-color: rgb(156, 34, 34);
+}
+
+[data-feedback='casi']{
+    background-color: rgb(180, 131, 25);
+}
+
+@media (max-width: 920px) {
+    .palabra{
+        font-size: 2rem;
+    }
+    .inputs, button,.divs-respuesta,.vidas{
+        height: 50px;
+        width: 50px;
+        font-size: 2rem;
+    }
+}
